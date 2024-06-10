@@ -56,7 +56,7 @@ bool watchdog_stop(const int fd) {
 }
 
 bool led_set(const int led_number, const bool on) {
-    const std::string path = "/sandbox/led" + std::to_string(led_number);
+    const std::string path = "/sandbox/leds/led" + std::to_string(led_number);
     const int fd = open(path.c_str(), O_WRONLY);
     if (!fd) {
         return false;
