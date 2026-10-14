@@ -1,3 +1,10 @@
-/cmake-build-*
-/build*
+cmake-build-*/
+build*/
 .idea/
+
+# Python
+__pycache__/
+
+# C#
+bin/
+obj/
